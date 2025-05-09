@@ -39,7 +39,7 @@ axios.get('jsons/abnormalities.json').then(res => {
 
 function loadabno(id) {
     window.open(
-        `/abno.html?id=${id}`,
+        `abno.html?id=${id}`,
         '_blank' // <- This is what makes it open in a new window.
       );
 }
