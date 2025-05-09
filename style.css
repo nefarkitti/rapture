@@ -49,6 +49,9 @@ nav a:hover {
 nav a.selected {
 
     filter: opacity(100%);
+    border-bottom: 0;
+    z-index: 999;
+    transform: translateY(2px);
 
 }
 
@@ -57,7 +60,7 @@ main {
     background-color: rgb(255, 255, 255);
     color: black;
     border: 2px solid rgb(235, 235, 235);
-    padding: 5px;
+    padding: 10px;
 
     padding-bottom: 50px;
 
