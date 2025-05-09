@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/abno.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
+</head>
+<body>
+
+    <script>
+        // load theme immediately
+        const getSave = localStorage.getItem("rapture-theme");
+        try {
+            if (getSave != null) {
+                var data = JSON.parse(getSave)
+                if (data.theme == "dark") {
+                    document.body.classList.add("dark")
+                }
+            }
+
+        } catch (e) {
+            console.log("data didn't load properly, throw error and show error overlay.")
+        }
+    </script>
+    
+    <header>
+        <h1>Rapture Corporation</h1>
+        <h3>"Face the Pain, Meet the Quota"</h3>
+        <button class="changethemebtn" onclick="changetheme()"><img id="changetheme" src="assets/moon.png" alt=""></button>
+    </header>
+
+    <br>
+
+    <nav>
+
+        <a href="index.html">
+            <span>Home</span>
+        </a>
+        <a href="abnormalities.html">
+            <span>Abnormalities</span>
+        </a>
+        <a href="index.html">
+            <span>Abnormality Creator</span>
+        </a>
+        <a href="credits.html">
+            <span>Credits</span>
+        </a>
+        <a href="" class="selected">
+            <span id="tab"></span>
+        </a>
+
+    </nav>
+
+    <main>
+
+        <div id="abnoheader">
+            <h1 id="abnoname">The Silent Orchestra <span id="abnoid"></span></h1>
+            <h3 id="abnoquip">From break and ruin...</h3>
+        </div>
+        <div class="abnoinfo">
+
+            <div class="icon"><img src="" id="abnoicon"></div>
+            <div class="content">
+                <span id="desc"></span>
+            </div>
+            <div class="ego">
+                
+                <div class="gift">
+                    <h2>E.G.O. Gift</h2>
+                    <div class="content">
+                        <img src="" alt="">
+                        <div class="info">
+                            <b>Da Capo</b>
+                            <span>Success Rate +4; Work Speed +4 <br> Absorb WHITE damage when the corresponding E.G.O suit is equipped</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="armoury">
+                    <div class="weapon">
+                        <h2>E.G.O. Weapon</h2>
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info">
+                            <b><span class="ALEPH">ALEPH</span></b>
+                            <span>Da Capo</span>
+                        </div>
+                    </div>
+                    <div class="suit">
+                        <h2>E.G.O. Suit</h2>
+                        <div class="thumbnail">
+                            <img src="" alt="">
+                        </div>
+                        <div class="info">
+                            <b><span class="ALEPH">ALEPH</span></b>
+                            <span>Da Capo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -6,12 +6,31 @@
     <title>Rapture Corporation Abnormalities</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="scripts/abnormalities.js" defer></script>
+    <script src="scripts/theme.js" defer></script>
 </head>
 <body>
+
+    <script>
+        // load theme immediately
+        const getSave = localStorage.getItem("rapture-theme");
+        try {
+            if (getSave != null) {
+                var data = JSON.parse(getSave)
+                if (data.theme == "dark") {
+                    document.body.classList.add("dark")
+                }
+            }
+
+        } catch (e) {
+            console.log("data didn't load properly, throw error and show error overlay.")
+        }
+    </script>
     
     <header>
         <h1>Rapture Corporation</h1>
         <h3>"Face the Pain, Meet the Quota"</h3>
+        <button class="changethemebtn" onclick="changetheme()"><img id="changetheme" src="assets/moon.png" alt=""></button>
     </header>
 
     <br>
@@ -39,6 +58,20 @@
 
         <div class="special">
             All of the canon abnormalities and used assets (such as sprites, sounds, characters and designs) are owned by Project Moon.
+        </div>
+
+        <br>
+
+        <div class="abnotableContainer">
+            <table id="abnotable" border="0">
+                <tr>
+                    <th>No.</th>
+                    <th>Portrait</th>
+                    <th>Name</th>
+                    <th>Subject Number</th>
+                    <th>Risk Level</th>
+                </tr>
+            </table>
         </div>
 
     </main>

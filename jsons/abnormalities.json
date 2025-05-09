@@ -1,0 +1,83 @@
+[
+    {
+        "name": "The Silent Orchestra",
+        "icon": "https://static.wikitide.net/projectmoonwiki/c/cf/LC-100019-AbnoIcon.webp",
+        "id": "T-01-31",
+        "risk": "ALEPH",
+        "quip": "From break and ruin, the most beautiful performance begins.",
+
+        "counter": 2,
+        "breaches": "Yes",
+        "workdmg": {
+            "type": "WHITE",
+            "range": [7, 9]
+        },
+        "max": 30,
+        "tbw": 1,
+        "workranges": {
+            "GOOD": [19, 30],
+            "NORM": [13, 18],
+            "BAD": [0, 12] 
+        },
+
+        "workfavours": {
+            "INSTINCT": [0, 0, 0, 0, 0],
+            "INSIGHT": [0, 0, 30, 30, 40],
+            "ATTACHMENT": [0, 0, 40, 40, 50],
+            "REPRESSION": [0, 0, 10, 20, 30]
+        },
+
+        "ego": "dacapo",
+
+        "managerial": [
+            "When the work result was Good, the Qliphoth Counter lowered.",
+            "When the work result was Bad, the Qliphoth Counter lowered.",
+            "The music that is played by The Silent Orchestra when it escapes consists of 4 Movements. As the piece progresses, the employees listening will suffer WHITE damage, meanwhile the size of the audible area of the music expands.",
+            "For each Movement, the weakness of The Silent Orchestra changed. The 1st Movement was Pale, while the 2nd Movement was Black. For the 3rd Movement it was White, and lastly, during the 4th Movement, only Red type attacks were effective. When the music reached the climax, The Silent Orchestra became immune to all forms of attack."
+        ],
+
+        "desc": "The Silent Orchestra has a beautiful performance that it just can't wait to show you!"
+    },
+
+    {
+        "name": "Der Freischütz",
+        "icon": "https://static.wikitide.net/projectmoonwiki/thumb/2/2a/LC-100103-AbnoIcon.webp/512px-LC-100103-AbnoIcon.webp.png",
+        "id": "F-01-69",
+        "risk": "HE",
+        "quip": "\"This magical bullet can truly hit anyone, just like you say.\"",
+
+        "counter": 3,
+        "breaches": "No",
+        "workdmg": {
+            "type": "BLACK",
+            "range": [3, 4]
+        },
+        "max": 18,
+        "tbw": 1,
+        "workranges": {
+            "GOOD": [12, 18],
+            "NORM": [7, 11],
+            "BAD": [0, 6] 
+        },
+
+        "workfavours": {
+            "INSTINCT": [40, 40, 40, 40, 40],
+            "INSIGHT": [50, 50, 50, 50, 50],
+            "ATTACHMENT": [30, 30, 30, 30, 30],
+            "REPRESSION": [0, 0, 60, 60, 60]
+        },
+
+        "ego": "magicbullet",
+
+        "managerial": [
+            "Requesting aid from Der Freischütz is permitted. Der Freischütz agreed to perform the request at the expense of 10% of our current energy.",
+            "However, the bullets that Der Freischütz fires can penetrate and damage anything. Furthermore, Der Freischütz’s 7th bullet will not fire where you desire, so you must plan ahead wisely.",
+            "The Qliphoth Counter lowered when [Agent], whose Justice was lower than Level 3, completed work with Der Freischütz.",
+            "When the work result was Normal, the Qliphoth Counter lowered with a normal probability.",
+            "When the work result was Bad, the Qliphoth Counter lowered with a high probability.",
+            "When the Qliphoth Counter hit 0, Der Freischütz willfully fired a bullet towards a random location."
+        ],
+
+        "desc": "It's him. That's the guy."
+    }
+]
