@@ -79,5 +79,42 @@
         ],
 
         "desc": "It's him. That's the guy."
+    },
+
+    {
+        "name": "Standard Training-Dummy Rabbit",
+        "icon": "https://static.wikitide.net/projectmoonwiki/thumb/9/9a/Standard_Training-Dummy_Rabbit_Codex_Icon.webp/150px-Standard_Training-Dummy_Rabbit_Codex_Icon.webp.png",
+        "id": "0-00-00",
+        "risk": "ZAYIN",
+        "quip": "\"The manager needs training. This is what I'm here for.\"",
+
+        "counter": 1,
+        "breaches": "Yes",
+        "workdmg": {
+            "type": "RED",
+            "range": [1, 2]
+        },
+        "max": 10,
+        "tbw": 1,
+        "workranges": {
+            "GOOD": [7, 10],
+            "NORM": [4, 6],
+            "BAD": [0, 3] 
+        },
+
+        "workfavours": {
+            "INSTINCT": [65, 65, 65, 65, 65],
+            "INSIGHT": [65, 65, 65, 65, 65],
+            "ATTACHMENT": [100, 100, 100, 100, 100],
+            "REPRESSION": [40, 40, 40, 40, 40]
+        },
+
+        "ego": "training",
+
+        "managerial": [
+            "When Repression work was performed with Standard Training-Dummy Rabbit, the Qliphoth Counter lowered."
+        ],
+
+        "desc": "<h1>Behaviour</h1>Upon breaching, the Standard Training-Dummy Rabbit will chase after the nearest employee to them. Once within close proximity, it will heal the target's SP over time. This continues for a long while, and unless provoked, the abnormality goes back to its containment. If provoked 3 times whilst near an employee, it will pop, flinging everyone in the same room as it around. This reveals an even smaller Standard Training-Dummy Rabbit, which will continue to follow the nearest employee and heal their SP gradually."
     }
 ]

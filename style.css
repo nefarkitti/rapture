@@ -281,3 +281,6 @@ span.ALEPH {
     font-size: 12px;
     margin-top: -2px;
 }
+span#desc h1 {
+    margin: 0;
+}
