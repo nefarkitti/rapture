@@ -284,3 +284,7 @@ span.ALEPH {
 span#desc h1 {
     margin: 0;
 }
+span#desc i {
+    filter: opacity(50%);
+    font-weight: 900;
+}
