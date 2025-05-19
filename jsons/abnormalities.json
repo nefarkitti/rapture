@@ -208,6 +208,42 @@
     },
 
     {
+        "name": "Lucky Coin",
+        "icon": "https://mods.store.gx.me/mods/7c3004e1-2cd2-459a-8f43-3cbab5ea7cf7/80758832-0134-4382-87d7-a98d66c0b9b8/1f94feb4-b8d0-48fe-abb9-5c5e88e0ecb2/contents/icon_512.png?a39d41257dd5047d80e0056173d3eeb0",
+        "id": "T-04-42",
+        "risk": "ALEPH",
+        "quip": "\"Hey. Hey. Have you ever heard of the coin fallacy?\"",
+
+        "counter": 3,
+        "breaches": "No",
+        "workdmg": {
+            "type": "BLACK",
+            "range": [3, 4]
+        },
+        "max": 18,
+        "tbw": 1,
+        "workranges": {
+            "GOOD": [12, 18],
+            "NORM": [7, 11],
+            "BAD": [0, 6] 
+        },
+
+        "workfavours": {
+            "INSTINCT": [40, 40, 40, 40, 40],
+            "INSIGHT": [50, 50, 50, 50, 50],
+            "ATTACHMENT": [30, 30, 30, 30, 30],
+            "REPRESSION": [0, 0, 60, 60, 60]
+        },
+
+        "ego": "",
+
+        "managerial": [
+        ],
+
+        "desc": "<h1>Behaviour</h1>When used, it has a 50% chance of doing one of two things. It can only be used one. It can either greatly increase the user's stats, or it can randomise the abnormality placement around the entire facility. The stat increase gives +50 into all the player's stats."
+    },
+
+    {
         "name": "Opened Can of WellCheers",
         "icon": "https://static.wikitide.net/projectmoonwiki/thumb/3/3a/LC-100028-AbnoIcon.webp/150px-LC-100028-AbnoIcon.webp.png",
         "id": "F-05-52",
